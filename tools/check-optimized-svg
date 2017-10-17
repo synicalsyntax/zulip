@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ `./tools/optimize-svg | grep -o '[^0]% = ' | wc -l` -ge 1 ]
+ then
+   echo "ERROR: svgo detected unoptimized SVG files." 1>&2
+   echo "Please run this tool again and commit the modified files."
+   exit 1
+ else
+  echo "SUCCESS: All SVG files are all optimized!"
+fi
