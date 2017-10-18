@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="500px" height="153px" viewBox="0 0 500 153" enable-background="new 0 0 500 153" xml:space="preserve">
-<rect x="-0.218" y="107.691" fill="#FFFFFF" width="500" height="45"/>
-<g>
-	<circle fill="#B8E0D4" cx="250" cy="107.57" r="26.43"/>
-	<polygon fill="#43A88B" points="238.165,94.49 258.843,94.49 261.585,100.397 247.978,114.956 258.843,114.956 261.585,121.496 
-		241.33,121.496 238.165,115.378 252.302,100.609 241.226,100.609 	"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="153"><path fill="#FFF" d="M-.218 107.691h500v45h-500z"/><circle fill="#B8E0D4" cx="250" cy="107.57" r="26.43"/><path fill="#43A88B" d="M238.165 94.49h20.678l2.742 5.907-13.607 14.559h10.865l2.742 6.54H241.33l-3.165-6.118 14.137-14.769h-11.076z"/></svg>
