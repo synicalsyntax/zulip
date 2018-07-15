@@ -97,6 +97,14 @@ function query_matches_user_group_or_stream(query, user_group_or_stream) {
     return query_matches_source_attrs(query, user_group_or_stream, ["name", "description"], " ");
 }
 
+function query_matches_person_or_user_group(query, item) {
+    if (user_groups.is_user_group(item)) {
+        return query_matches_user_group_or_stream(query, item);
+    }
+
+    return query_matches_person(query, item);
+}
+
 // Case-insensitive
 function query_matches_emoji(query, emoji) {
     // replaces spaces with underscores
