@@ -104,13 +104,12 @@
 }
 
 .user_sidebar_entry .selectable_sidebar_block {
-    width: calc(100% - 16px);
-    display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
 .user-presence-link {
-    width: calc(100% - 24px);
+    flex-grow: 1;
+
     .my_user_status {
         opacity: 0.5;
     }
@@ -122,19 +121,14 @@
 }
 
 .selectable_sidebar_block {
-    cursor: pointer;
-}
-
-.group-pms-sidebar-entry,
-.user_sidebar_entry {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    cursor: pointer;
 }
 
 .user_sidebar_entry .count,
 .group-pms-sidebar-entry .count {
-    float: right;
     padding: 0 4px;
     background-color: hsl(105, 2%, 50%);
     border-radius: 0px;
@@ -144,22 +138,16 @@
     height: 15px;
     font-weight: normal;
     letter-spacing: 0.6px;
-    position: relative;
-    top: 3px;
     border-radius: 4px;
     margin-left: 5px;
 }
 
 .user_sidebar_entry .count {
-    display: none;
-}
-
-.group-pms-sidebar-entry .count {
-    margin-right: 16px;
+    visibility: hidden;
 }
 
 .user_sidebar_entry.user-with-count .count {
-    display: block;
+    visibility: visible;
 }
 
 #userlist-toggle {
