@@ -72,10 +72,7 @@
 #group-pms .user_circle_fraction {
     width: 8px;
     height: 8px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 5px;
     display: block;
 }
 
@@ -91,9 +88,13 @@
     margin-left: 5px;
 }
 
-.group-pms-sidebar-entry .selectable_sidebar_block {
-    display: flex;
-    width: 100%;
+#group-pms li.group-pms-sidebar-entry {
+    .group_circle_wrapper {
+        // vertically align in center of first line
+        height: 20px;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .group-pm-link,
@@ -117,7 +118,6 @@
 
 .group-pm-link {
     width: calc(100% - 60px);
-    display: inline-block;
 }
 
 .selectable_sidebar_block {
