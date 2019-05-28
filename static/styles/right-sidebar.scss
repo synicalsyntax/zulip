@@ -60,7 +60,6 @@
 
     border-radius: 4px;
     margin: 1px 0px;
-    padding-right: 15px;
 }
 
 #group-pm-title {
@@ -89,6 +88,9 @@
 }
 
 #group-pms li.group-pms-sidebar-entry {
+    margin-right: 12px;
+
+    .group_count_wrapper,
     .group_circle_wrapper {
         // vertically align in center of first line
         height: 20px;

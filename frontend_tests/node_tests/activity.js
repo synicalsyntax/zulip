@@ -408,7 +408,7 @@ run_test('group_update_dom_counts', () => {
     const li = $(li_selector);
     count.set_find_results('.value', value);
     li.set_find_results('.count', count);
-    count.set_parent(li);
+    count.set_parents_result('li', li);
 
     const counts = new Dict();
     counts.set(pm_key, 5);
@@ -761,7 +761,7 @@ run_test('update_huddles_and_redraw', () => {
     const li = $(li_selector);
     count.set_find_results('.value', value);
     li.set_find_results('.count', count);
-    count.set_parent(li);
+    count.set_parents_result('li', li);
 
     const real_get_huddles = activity.get_huddles;
     activity.get_huddles = () => ['1,2'];

@@ -48,7 +48,7 @@ function update_pm_count_in_dom(count_span, value_span, count) {
 }
 
 function update_group_count_in_dom(count_span, value_span, count) {
-    var li = count_span.parent();
+    var li = count_span.parents('li');
 
     if (count === 0) {
         count_span.hide();
