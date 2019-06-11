@@ -101,66 +101,68 @@
             min-width: inherit;
         }
 
-        &:hover,
-        &:focus {
-            border-color: hsl(0, 0%, 60%);
-        }
-
-        &:active {
-            border-color: hsl(0, 0%, 60%);
-            color: inherit;
-            background-color: hsl(0, 0%, 95%);
-        }
-
-        &.sea-green {
-            color: hsl(156, 41%, 40%);
-            border-color: hsl(156, 28%, 70%);
-
+        &:enabled {
             &:hover,
             &:focus {
-                border-color: hsl(156, 30%, 50%);
+                border-color: hsl(0, 0%, 60%);
             }
 
             &:active {
-                border-color: hsl(156, 30%, 40%);
-                color: hsl(156, 44%, 43%);
-                background-color: hsl(154, 33%, 96%);
+                border-color: hsl(0, 0%, 60%);
+                color: inherit;
+                background-color: hsl(0, 0%, 95%);
+            }
+
+            &.sea-green {
+                color: hsl(156, 41%, 40%);
+                border-color: hsl(156, 28%, 70%);
+
+                &:hover,
+                &:focus {
+                    border-color: hsl(156, 30%, 50%);
+                }
+
+                &:active {
+                    border-color: hsl(156, 30%, 40%);
+                    color: hsl(156, 44%, 43%);
+                    background-color: hsl(154, 33%, 96%);
+                }
+            }
+
+            &.btn-warning {
+                color: hsl(35, 70%, 56%);
+                border-color: hsl(35, 98%, 84%);
+
+                &:hover,
+                &:focus {
+                    border-color: hsl(35, 55%, 70%);
+                }
+
+                &:active {
+                    color: hsl(35, 82%, 40%);
+                    border-color: hsl(35, 55%, 70%);
+                    background-color: hsl(33, 48%, 96%);
+                }
+            }
+
+            &.btn-danger {
+                color: hsl(357, 64%, 72%);
+                border-color: hsl(4, 56%, 82%);
+
+                &:hover,
+                &:focus {
+                    border-color: hsl(2, 46%, 68%);
+                }
+
+                &:active {
+                    color: hsl(357, 55%, 63%);
+                    border-color: hsl(2, 46%, 68%);
+                    background-color: hsl(7, 82%, 98%);
+                }
             }
         }
 
-        &.btn-warning {
-            color: hsl(35, 70%, 56%);
-            border-color: hsl(35, 98%, 84%);
-
-            &:hover,
-            &:focus {
-                border-color: hsl(35, 55%, 70%);
-            }
-
-            &:active {
-                color: hsl(35, 82%, 40%);
-                border-color: hsl(35, 55%, 70%);
-                background-color: hsl(33, 48%, 96%);
-            }
-        }
-
-        &.btn-danger {
-            color: hsl(357, 64%, 72%);
-            border-color: hsl(4, 56%, 82%);
-
-            &:hover,
-            &:focus {
-                border-color: hsl(2, 46%, 68%);
-            }
-
-            &:active {
-                color: hsl(357, 55%, 63%);
-                border-color: hsl(2, 46%, 68%);
-                background-color: hsl(7, 82%, 98%);
-            }
-        }
-
-        &[disabled="disabled"] {
+        &:disabled {
             cursor: not-allowed;
             -moz-filter: saturate(0);
             filter: saturate(0);
