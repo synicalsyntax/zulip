@@ -168,12 +168,6 @@
             filter: saturate(0);
             background-color: hsl(0, 0%, 93%);
             color: hsl(0, 3%, 52%);
-
-            &:hover {
-                background-color: hsl(0, 0%, 93%);
-                color: hsl(156, 39%, 54%);
-                border-color: hsl(156, 39%, 77%);
-            }
         }
     }
 
