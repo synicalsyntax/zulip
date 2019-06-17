@@ -92,8 +92,7 @@ on a dark background, and don't change the dark labels dark either. */
         opacity: 0.5;
     }
 
-    .new-style .button:not(.save-status),
-    .new-style .button[disabled=disabled]:hover,
+    .new-style .button:not(.sea-green):not(.btn-danger):not(.btn-warning):not(disabled),
     input[type="text"],
     input[type="email"],
     input[type="password"],
@@ -171,7 +170,7 @@ on a dark background, and don't change the dark labels dark either. */
         box-shadow: 0 0 1px hsl(0, 0%, 98%);
     }
 
-    .new-style .button:not(.save-status):focus,
+    .new-style .button:not(.sea-green):not(.btn-danger):not(.btn-warning):enabled:focus,
     input[type="text"]:focus,
     input[type="email"]:focus,
     input[type="number"]:focus,
@@ -181,10 +180,68 @@ on a dark background, and don't change the dark labels dark either. */
         border-color: hsla(0, 0%, 0%, 0.9);
     }
 
+    .new-style .button,
     .message-header-contents,
     .message_header_private_message .message-header-contents,
     #tab_bar #tab_list li.active {
         background-color: hsla(0, 0%, 0%, 0.2);
+    }
+
+    .new-style .button {
+        &:enabled {
+            &.sea-green {
+                & {
+                    border-color: hsl(156, 30%, 40%);
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    border-color: hsl(156, 30%, 50%);
+                }
+
+                &:active {
+                    background-color: hsla(156, 30%, 20%, 0.1);
+                }
+            }
+
+            &.btn-warning {
+                & {
+                    border-color: hsl(35, 98%, 50%);
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    border-color: hsl(35, 98%, 60%);
+                }
+
+                &:active {
+                    background-color: hsla(33, 48%, 60%, 0.1);
+                }
+            }
+
+            &.btn-danger {
+                & {
+                    border-color: hsl(2, 46%, 50%);
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    border-color: hsl(2, 46%, 60%);
+                }
+
+                &:active {
+                    border-color: hsl(2, 46%, 40%);
+                    background-color: hsla(7, 82%, 20%, 0.1);
+                }
+            }
+        }
+
+        &:disabled {
+            background-color: hsla(0, 0%, 39%, 0.15);
+        }
     }
 
     .message-header-contents,
