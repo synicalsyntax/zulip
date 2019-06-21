@@ -816,47 +816,6 @@ nav ul li.active::after {
     text-shadow: 0px 0px 5px hsla(164, 74%, 15%, 0.3), 0px 0px 20px hsla(0, 0%, 100%, 0.2);
 }
 
-.portico-landing.hello .hero header a {
-    display: block;
-    margin: 20px auto 0px auto;
-    text-align: center;
-}
-
-.portico-landing.hello .hero header button {
-    margin-top: 0px;
-    padding: 12px 20px;
-
-    background-color: hsl(0, 0%, 100%);
-    border: 2px solid hsl(0, 0%, 100%);
-
-    font-size: 1.2em;
-    font-weight: 500;
-    color: hsl(148, 23%, 51%);
-
-    box-shadow: 0px 3px 10px hsla(0, 0%, 0%, 0.2);
-
-    transition: all 0.2s ease;
-}
-
-.portico-landing.hello .hero header button:hover {
-    box-shadow: 0px 3px 10px hsla(0, 0%, 100%, 0.2);
-}
-
-.portico-landing.hello .hero header button:active {
-    box-shadow: 0px 3px 20px hsla(0, 0%, 100%, 0.5);
-}
-
-.portico-landing.hello .hero header .download-button {
-    margin-top: 10px;
-}
-
-.portico-landing.hello .hero header #see_all_apps {
-    display: inline-block;
-    margin-top: 10px;
-
-    font-weight: normal;
-}
-
 .portico-landing.hello .col-3-5,
 .portico-landing.hello .col-2,
 .portico-landing.hello .col-4 {
